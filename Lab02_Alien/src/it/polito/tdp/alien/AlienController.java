@@ -71,7 +71,7 @@ public class AlienController {
     		//Qui deve aggiungere la parola aliena e la relativa traduzione
     		translation=s[1];
     		if(alienWord.matches("[a-zA-Z]*") && translation.matches("[a-zA-Z]*")) {
-    			txtResult.appendText("Nuova traduzione aggiunta!\n");
+    			txtResult.appendText("Nuova traduzione aggiunta per la parola aliena: '" +alienWord+ "' \n");
     			dizionario.addWord(alienWord, translation);
     			}
     		

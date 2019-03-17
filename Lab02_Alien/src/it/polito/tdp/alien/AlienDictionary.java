@@ -27,7 +27,7 @@ public class AlienDictionary {
 	}
 	
 	public String translateWord(String alienWord) {
-		String x="";
+		String x="Le traduzioni della parola '" +alienWord+ "' sono: \n";
 		for(WordEnhanced w: dizionario) {
 			if(w.getAlienWord().compareTo(alienWord)==0) {
 				for(String s: w.getTranslationList()) {
